@@ -41,6 +41,7 @@ impl Executor {
                     }
                     Err(e) => {
                         results[idx] = Err(e);
+                        done += 1;
                     }
                 }
             }
